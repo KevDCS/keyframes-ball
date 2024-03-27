@@ -1,0 +1,26 @@
+body {
+	margin: 0;
+	background-color: #111;
+	min-height: 100vh;
+	display: grid;
+	place-content: center;
+}
+
+.pelota {
+	height: 100px;
+	width: 100px;
+	background-color: darkblue;
+	border-radius: 100%;
+	animation: bounce 0.5s infinite alternate;
+}
+
+@keyframes bounce {
+	from {
+		transform: translateY(0px);
+		height: 70px;
+		width: 110px;
+	}
+	to {
+		transform: translateY(-100px);
+	}
+}
